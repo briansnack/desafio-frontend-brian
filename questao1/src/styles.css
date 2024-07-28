@@ -1,0 +1,10 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .hero-card {
+    border: 1px solid #ddd;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 8px;
+  }

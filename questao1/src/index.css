@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+input {
+  padding: 8px;
+  margin: 20px;
+  width: 300px;
+}
+
+.hero-card {
+  border: 1px solid #ddd;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 8px;
+}
