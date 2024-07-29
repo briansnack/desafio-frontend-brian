@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import useHeroStore from "../store/heroStore";
+import React, { useState, useEffect } from 'react';
+import useHeroStore from '../store/heroStore';
 import './Battle.css';
 
 const Battle = () => {
@@ -42,8 +42,8 @@ const Battle = () => {
             {!winner && (
                 <div className="hero-list">
                     {filteredHeroes.map(hero => (
-                        <div 
-                            key={hero.id} 
+                        <div
+                            key={hero.id}
                             className={`hero-card ${hero === hero1 || hero === hero2 ? 'highlight' : ''}`}
                             onClick={() => {
                                 if (!hero1) {

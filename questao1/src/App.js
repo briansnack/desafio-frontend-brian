@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import HeroList from './components/HeroList';
 import SearchBar from './components/SearchBar';
 import Battle from './components/Battle';
+import useHeroStore from './store/heroStore'; 
 import './App.css';
 
 const App = () => {
@@ -9,6 +10,8 @@ const App = () => {
     const savedMode = localStorage.getItem('dark-mode');
     return savedMode === 'true' || false;
   });
+
+  const { fetchHeroes } = useHeroStore();
 
   useEffect(() => {
     localStorage.setItem('dark-mode', isDarkMode);
@@ -18,6 +21,10 @@ const App = () => {
       document.body.classList.remove('dark-mode');
     }
   }, [isDarkMode]);
+
+  useEffect(() => {
+    fetchHeroes(); 
+  }, [fetchHeroes]);
 
   const toggleDarkMode = () => {
     setIsDarkMode(prevMode => !prevMode);
@@ -29,7 +36,8 @@ const App = () => {
         {isDarkMode ? 'Modo claro' : 'Modo Escuro'}
       </button>
       <SearchBar />
-      <Battle /> 
+      {/* <HeroList /> */}
+      <Battle />
     </div>
   );
 };
