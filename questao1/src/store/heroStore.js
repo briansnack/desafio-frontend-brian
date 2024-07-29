@@ -5,7 +5,7 @@ const useHeroStore = create(set => ({
     filteredHeroes: [],
     fetchHeroes: async () => {
         try {
-            const response = await fetch('http://homologacao3.azapfy.com.br/api/ps/metahumans');
+            const response = await fetch('/api/ps/metahumans'); 
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }

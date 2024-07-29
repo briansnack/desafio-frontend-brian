@@ -1,5 +1,5 @@
 import React from "react";
-import useHeroStore from "../store/heroStore"; 
+import useHeroStore from "../store/heroStore";
 import './SearchBar.css';
 
 const SearchBar = () => {

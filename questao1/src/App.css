@@ -3,6 +3,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Arial', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .App {
@@ -10,12 +11,13 @@ body {
   padding: 20px;
 }
 
-input {
+input, button {
   padding: 8px;
   margin: 20px;
   width: 300px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  transition: border-color 0.3s, background-color 0.3s;
 }
 
 .hero-card {
@@ -27,6 +29,7 @@ input {
   width: 200px;
   vertical-align: top;
   background-color: #f9f9f9;
+  transition: background-color 0.3s, border-color 0.3s;
 }
 
 .hero-card h3 {
@@ -52,4 +55,25 @@ input {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* Modo escuro */
+.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dark-mode .hero-card {
+  background-color: #1e1e1e;
+  border-color: #333;
+}
+
+.dark-mode input, .dark-mode button {
+  border-color: #555;
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+.dark-mode button:hover {
+  background-color: #555;
 }

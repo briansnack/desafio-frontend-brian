@@ -1,18 +1,18 @@
 .hero-card {
-    border: 1px solid #ddd;
-    padding: 16px;
-    margin: 16px;
-    border-radius: 8px;
-    display: inline-block;
-    width: 200px;
-    vertical-align: top;
-    background-color: #f9f9f9;
-  }
-  
-  .hero-card h3 {
-    margin-top: 0;
-  }
-  
-  .hero-card p {
-    margin: 5px 0;
-  }
+  border: 1px solid #ddd;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 8px;
+  display: inline-block;
+  width: 200px;
+  vertical-align: top;
+  background-color: #f9f9f9;
+}
+
+.hero-card h3 {
+  margin-top: 0;
+}
+
+.hero-card p {
+  margin: 5px 0;
+}
