@@ -7,12 +7,17 @@
   width: 200px;
   vertical-align: top;
   background-color: #f9f9f9;
+  text-align: center;
+}
+
+.hero-image {
+  width: 100%; 
+  height: auto; 
+  border-radius: 8px;
+  margin-bottom: 8px;
 }
 
 .hero-card h3 {
   margin-top: 0;
-}
-
-.hero-card p {
-  margin: 5px 0;
+  font-size: 18px;
 }

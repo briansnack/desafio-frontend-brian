@@ -51,7 +51,7 @@ const Battle = () => {
                     <h3>Vencedor:</h3>
                     <div>
                         <h4>{winner.name}</h4>
-                        <img src={winner.image?.url} alt={winner.name} className="hero-image" />
+                        <img src={winner.images.lg} alt={winner.name} className="hero-image" />
                         <p>Inteligência: {winner.powerstats.intelligence}</p>
                         <p>Força: {winner.powerstats.strength}</p>
                         <p>Velocidade: {winner.powerstats.speed}</p>

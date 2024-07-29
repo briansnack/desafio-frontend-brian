@@ -1,23 +1,29 @@
 .battle-container {
     text-align: center;
-    margin: 20px;
-}
-
-.hero-selector {
+    padding: 20px;
+  }
+  
+  .hero-selector {
     margin-bottom: 20px;
-}
-
-select {
-    margin: 10px;
-    padding: 5px;
-}
-
-.battle-result {
+  }
+  
+  select {
+    padding: 8px;
+    margin: 0 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  .battle-result {
     margin-top: 20px;
-}
-
-.hero-image {
-    max-width: 150px;
+  }
+  
+  .hero-image {
+    width: 200px; 
     height: auto;
     border-radius: 8px;
-}
+    margin-bottom: 10px;
+  }
