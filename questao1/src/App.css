@@ -57,7 +57,6 @@ input, button {
   transform: translate(-50%, -50%);
 }
 
-/* Modo escuro */
 .dark-mode {
   background-color: #121212;
   color: #e0e0e0;

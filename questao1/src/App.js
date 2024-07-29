@@ -1,4 +1,3 @@
-// src/App.js
 import React, { useState, useEffect } from 'react';
 import HeroList from './components/HeroList';
 import SearchBar from './components/SearchBar';
@@ -27,7 +26,7 @@ const App = () => {
   return (
     <div className="App">
       <button onClick={toggleDarkMode}>
-        {isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+        {isDarkMode ? 'Modo claro' : 'Modo Escuro'}
       </button>
       <SearchBar />
       <Battle />

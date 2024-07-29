@@ -13,7 +13,7 @@ const SearchBar = () => {
         setFilteredHeroes(filtered);
     };
     
-    return <input type="text" placeholder="Busca de heróis" onChange={handleSearch} />;
+    return <input type="text" placeholder="Busca de heróis pelo nome" onChange={handleSearch} />;
 }
 
 export default SearchBar;
