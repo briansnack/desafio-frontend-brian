@@ -1,29 +1,79 @@
 .battle-container {
     text-align: center;
-    padding: 20px;
-  }
-  
-  .hero-selector {
-    margin-bottom: 20px;
-  }
-  
-  select {
-    padding: 8px;
-    margin: 0 10px;
-  }
-  
-  button {
+}
+
+.hero-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.hero-card {
+    border: 1px solid #ddd;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 8px;
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+
+.hero-card.highlight {
+    border-color: #f00; 
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    transform: scale(1.05); 
+}
+
+.hero-card img {
+    width: 150px; 
+    height: auto;
+    border-radius: 4px; 
+}
+
+.battle-button {
+    margin: 20px 0; 
     padding: 10px 20px;
     font-size: 16px;
-  }
-  
-  .battle-result {
+    cursor: pointer;
+}
+
+.selected-heroes {
+    display: flex;
+    justify-content: center;
     margin-top: 20px;
-  }
-  
-  .hero-image {
-    width: 200px; 
-    height: auto;
+}
+
+.selected-hero {
+    margin: 0 10px;
+    padding: 10px;
+    border: 2px solid #ddd;
     border-radius: 8px;
-    margin-bottom: 10px;
-  }
+    text-align: center; 
+}
+
+.selected-hero img {
+    width: 150px; 
+    height: auto;
+    border-radius: 4px; 
+}
+
+.battle-result {
+    margin-top: 20px;
+}
+
+.battle-result img {
+    width: 150px; 
+    height: auto;
+    border-radius: 4px; 
+}
+
+.reset-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}

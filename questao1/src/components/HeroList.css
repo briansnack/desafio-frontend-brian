@@ -1,5 +1,34 @@
+.hero-list-container {
+  text-align: center;
+}
+
+input {
+  padding: 8px;
+  margin: 20px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
 .hero-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero-card {
+  border: 1px solid #ddd;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 8px;
+  display: inline-block;
+  width: 200px;
+  vertical-align: top;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.hero-card img {
+  width: 150px; 
+  height: auto;
+}

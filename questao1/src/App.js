@@ -29,8 +29,7 @@ const App = () => {
         {isDarkMode ? 'Modo claro' : 'Modo Escuro'}
       </button>
       <SearchBar />
-      <Battle />
-      <HeroList />
+      <Battle /> 
     </div>
   );
 };
